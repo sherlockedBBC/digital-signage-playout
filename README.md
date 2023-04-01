@@ -16,7 +16,7 @@ The videos in the folders will be played back alphabetically, starting again fro
 
 There are still problems I haven't fixed yet:
 - [ ] [Analog Front Audio doesn't work](https://www.reddit.com/r/linuxquestions/comments/dfq5ar/looking_for_audio_driver_for_realtek_rt5672/)
-- [ ] Screen tearing when playing back video
+- [x] Screen tearing when playing back video
 
 ## Installation
 
@@ -178,6 +178,20 @@ sudo systemctl disable systemd-networkd-wait-online.service
 
 ```
 sudo systemctl mask systemd-networkd-wait-online.service
+```
+
+### [Fix Screen Tearing](https://wiki.archlinux.org/title/intel_graphics)
+
+```
+sudo nano /etc/X11/xorg.conf.d/20-intel.conf
+```
+
+```
+Section "Device"
+  Identifier "Intel Graphics"
+  Driver "intel"
+  Option "TearFree" "true"
+EndSection
 ```
 
 ## Security
