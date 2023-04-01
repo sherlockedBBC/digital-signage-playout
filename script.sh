@@ -42,6 +42,9 @@ done
   # Run the command
 $xrandr_cmd
 
+# Disable display auto power off
+xset s off -dpms
+
 
 # ------------------------------------------------
 # Set Wallpaper
