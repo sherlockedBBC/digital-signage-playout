@@ -8,7 +8,7 @@ To display trailers or other information the [OSCAR Student Cinema](https://www.
 
 ## Usage
 
-To use the finished playout server just insert a USB stick formatted in exfat and named `PLAYOUT`. Depending on how many Displays should be fed, corresponding folders should be created on the volume named `SCREEN1`, `SCREEN2`, and so on. If a special background should be displayed when no video files are in a folder for a screen, this image can be dropped in the root directory with the extension `png`.
+To use the finished playout server just insert a USB stick formatted in exfat and named `PLAYOUT`. Depending on how many Displays should be fed, corresponding folders should be created on the volume named `SCREEN1`, `SCREEN2`, and so on. If a special background should be displayed when no video files are in a folder for a screen, this image can be dropped in the root directory with the name and extension `background.png`.
 
 The videos in the folders will be played back alphabetically, starting again from the beginning when the last ended. When the USB stick is pulled while the device is on, the background image should be displayed. The playback should automatically start again when the USB is reconnected.
 
